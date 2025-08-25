@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    padding-inline: 1rem;
+
+    h1 {
+        grid-column: 1;
+        margin-block: auto;
+    }
+
+    nav {
+        grid-column: 2;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            padding: 1rem;
+
+            &:hover {
+                background: gray;
+            }
+        }
+    }
+}
