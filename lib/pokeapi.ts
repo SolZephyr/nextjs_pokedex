@@ -70,17 +70,25 @@ export const POKEAPI = () => {
                 }
             }`;
             const response = await request({
-                query: `query {
-                            pokemon_aggregate(limit: ${count} where: ${where} ) {
-                                nodes {
-                                    id
+                query:
+                    `query {
+                    pokemon_aggregate(limit: ${count} where: ${where} ) {
+                        nodes {
+                            id
+                            name
+                            pokemontypes {
+                                slot
+                                type {
                                     name
                                 }
                             }
-                        }`
+                            pokemonsprites {
+                                sprites
+                            }
+                        }
+                    }
+                }`
             }) as ResponseGQL;
-            console.log(response);
-
             return {
                 status: response.status,
                 pokemons: (response?.body?.data?.pokemon_aggregate?.nodes || []) as Pokemon[]
