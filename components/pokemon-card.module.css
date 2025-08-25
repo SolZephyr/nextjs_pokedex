@@ -1,5 +1,5 @@
 .pokemonCard {
-    border: 2px solid red;
+    border: 5px solid red;
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -15,7 +15,7 @@
     img {
         background-color: white;
         border-radius: 50%;
-        border: 1px solid red;
+        border: 2px solid red;
         width: 10rem;
     }
 }

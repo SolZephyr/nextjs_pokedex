@@ -2,7 +2,7 @@ import { Pokemon } from "./interface";
 
 export interface PokeApiResult {
     status: number;
-    error: string;
+    error?: string;
     pokemons?: Pokemon[];
     pokemon?: Pokemon;
 }
@@ -40,7 +40,7 @@ export const POKEAPI = () => {
                     status: response.status,
                     error: response.statusText
                 }
-                throw new Error(response.statusText);
+                //throw new Error(response.statusText);
             }
             const body = await response.json();
             return {
