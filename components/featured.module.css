@@ -1,0 +1,10 @@
+.featured {
+
+    & > ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: flex-start;
+        gap: .25rem;
+    }
+}

@@ -1,0 +1,85 @@
+.pokemonType {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: white;
+    border: 1px solid black;
+    width: 6rem;
+    text-align: center;
+    font-weight: 900;
+
+    &[datatype="type-normal"] {
+        background: #a1a1a1;
+    }
+
+    &[datatype="type-grass"] {
+        background: #5d9d3c;
+    }
+
+    &[datatype="type-fire"] {
+        background: #d43a30;
+    }
+
+    &[datatype="type-water"] {
+        background: #4c79bc;
+    }
+
+    &[datatype="type-fighting"] {
+        background: #f08833;
+    }
+
+    &[datatype="type-flying"] {
+        background: #8fb8e4;
+    }
+
+    &[datatype="type-poison"] {
+        background: #6d4b97;
+    }
+
+    &[datatype="type-electric"] {
+        background: #f2c341;
+    }
+
+    &[datatype="type-ground"] {
+        background: #895229;
+    }
+
+    &[datatype="type-psychic"] {
+        background: #dc4d79;
+    }
+
+    &[datatype="type-rock"] {
+        background: #ada984;
+    }
+
+    &[datatype="type-ice"] {
+        background: #78ccf0;
+    }
+
+    &[datatype="type-bug"] {
+        background: #95a135;
+    }
+
+    &[datatype="type-dragon"] {
+        background: #4c60a9;
+    }
+
+    &[datatype="type-ghost"] {
+        background: #6b426e;
+    }
+
+    &[datatype="type-dark"] {
+        background: #4e403f;
+    }
+
+    &[datatype="type-steel"] {
+        background: #74a2b9;
+    }
+
+    &[datatype="type-fairy"] {
+        background: #ba7fb5;
+    }
+
+    &[datatype="type-none"] {
+        background: #76a696;
+    }
+}

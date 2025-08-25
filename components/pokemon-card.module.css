@@ -1,0 +1,28 @@
+.pokemonCard {
+    border: 2px solid red;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+
+    figure {
+        padding-block: 1rem;
+    }
+
+    img {
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 10rem;
+    }
+}
+
+.types {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+}
