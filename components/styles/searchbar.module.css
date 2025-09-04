@@ -1,0 +1,19 @@
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+        padding: .5rem;
+        border: 1px solid black;
+    }
+
+    button {
+        background-color: #4c79bc;
+        border-radius: .5rem;
+        color: white;
+        padding: .5rem;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -3,6 +3,26 @@
 :root {
   --background: #ffffff;
   --foreground: #030303;
+
+  --type-normal: #a1a1a1;
+  --type-grass: #5d9d3c;
+  --type-fire: #d43a30;
+  --type-water: #4c79bc;
+  --type-fighting: #f08833;
+  --type-flying: #8fb8e4;
+  --type-poison: #6d4b97;
+  --type-electric: #f2c341;
+  --type-ground: #895229;
+  --type-psychic: #dc4d79;
+  --type-rock: #ada984;
+  --type-ice: #78ccf0;
+  --type-bug: #95a135;
+  --type-dragon: #4c60a9;
+  --type-ghost: #6b426e;
+  --type-dark: #4e403f;
+  --type-steel: #74a2b9;
+  --type-fairy: #ba7fb5;
+  --type-none: #76a696;
 }
 
 @theme inline {
@@ -10,7 +30,28 @@
   --color-foreground: var(--foreground);
   --font-jaldi: var(--font-jaldi);
   --font-jersey: var(--font-jersey);
+
+  --color-type-normal: var(--type-normal);
+  --color-type-grass: var(--type-grass);
+  --color-type-fire: var(--type-fire);
+  --color-type-water: var(--type-water);
+  --color-type-fighting: var(--type-fighting);
+  --color-type-flying: var(--type-flying);
+  --color-type-poison: var(--type-poison);
+  --color-type-electric: var(--type-electric);
+  --color-type-ground: var(--type-ground);
+  --color-type-psychic: var(--type-psychic);
+  --color-type-rock: var(--type-rock);
+  --color-type-ice: var(--type-ice);
+  --color-type-bug: var(--type-bug);
+  --color-type-dragon: var(--type-dragon);
+  --color-type-ghost: var(--type-ghost);
+  --color-type-dark: var(--type-dark);
+  --color-type-steel: var(--type-steel);
+  --color-type-fairy: var(--type-fairy);
+  --color-type-none: var(--type-none);
 }
+
 /* 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -46,6 +87,14 @@ h1, h2, h3 {
 
 .btn-primary {
   @apply p-2 pl-6 pr-6 mt-4 mb-14 cursor-pointer text-xl text-white bg-gradient-to-r from-orange-400 to-red-400 rounded-full font-bold flex items-center justify-center gap-1;
+}
+
+.btn-search {
+  @apply p-2 cursor-pointer text-xl text-white bg-blue-500 border-3 border-transparent rounded-xl font-bold flex items-center justify-center hover:bg-blue-100 hover:text-blue-500 hover:border-blue-500;
+}
+
+.drop-down {
+  @apply p-2 cursor-pointer text-xl text-white border-blue-500 rounded-xl font-bold flex items-center justify-center;
 }
 
 .text-gradient {
@@ -87,4 +136,271 @@ h1, h2, h3 {
 
   display: grid;
   grid-template-columns: inherit;
+}
+
+
+.type-normal {
+  --color-tmp: var(--type-normal);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-grass {
+  --color-tmp: var(--type-grass);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-fire {
+  --color-tmp: var(--type-fire);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-water {
+  --color-tmp: var(--type-water);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-fighting {
+  --color-tmp: var(--type-fighting);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-flying {
+  --color-tmp: var(--type-flying);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-poison {
+  --color-tmp: var(--type-poison);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-electric {
+  --color-tmp: var(--type-electric);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-ground {
+  --color-tmp: var(--type-ground);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-psychic {
+  --color-tmp: var(--type-psychic);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-rock {
+  --color-tmp: var(--type-rock);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-ice {
+  --color-tmp: var(--type-ice);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-bug {
+  --color-tmp: var(--type-bug);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-dragon {
+  --color-tmp: var(--type-dragon);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-ghost {
+  --color-tmp: var(--type-ghost);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-dark {
+  --color-tmp: var(--type-dark);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-steel {
+  --color-tmp: var(--type-steel);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-fairy {
+  --color-tmp: var(--type-fairy);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
+}
+
+.type-none {
+  --color-tmp: var(--type-none);
+
+  &.type-bg, .type-bg {
+    background: var(--color-tmp);
+  }
+  &.type-bdr, .type-bdr {
+    border-color: var(--color-tmp);
+  }
+  .field-id {
+    background: rgb(from var(--color-tmp) r g b / .3);
+  }
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jaldi, Jersey_10 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const jaldi = Jaldi({
   subsets: ["latin"],
@@ -27,11 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${jaldi.variable} ${jersey.variable} antialiased`}
-      >
+      <body className={`${jaldi.variable} ${jersey.variable} antialiased flex flex-col min-h-screen`} >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

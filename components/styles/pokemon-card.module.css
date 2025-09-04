@@ -2,11 +2,16 @@
     border: 5px solid red;
     padding: 1rem;
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: subgrid;
     justify-content: center;
     align-items: center;
     background-color: lightgray;
+
+    & > * {
+        display: flex;
+        justify-content: center;
+    }
 
     figure {
         padding-block: 1rem;
