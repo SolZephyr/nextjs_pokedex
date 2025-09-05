@@ -5,8 +5,8 @@ import { POKEAPI, PokeApiResult } from "@/lib/pokeapi";
 import Image from "next/image";
 import { Suspense, useState } from "react";
 import React from "react";
-import PokemonCard from "./list/pokemon-card";
 import { Loader } from "lucide-react";
+import PokemonCard from "../list/pokemon-card";
 
 export default function PokemonRandom() {
 
@@ -16,14 +16,18 @@ export default function PokemonRandom() {
     async function getRandomPokemon() {
         setLoadRandom(true);
         setPokemon(undefined);
-        const tmp: PokeApiResult = await POKEAPI().pokemon().count({});
-        console.log(tmp);
+        // TODO: Get actual total
+        //const tmp: PokeApiResult = await POKEAPI().pokemon().count({});
+        //console.log(tmp);
         const result: PokeApiResult = await POKEAPI().pokemon().random(1);
-        setLoadRandom(false);
         if (result.status) {
             const resultList: Pokemon[] = (result.pokemons || []);
             if (resultList.length > 0) {
+                setLoadRandom(false);
                 setPokemon(resultList[0]);
+            } else {
+                console.log("No result. Redoing...");
+                getRandomPokemon();
             }
         }
     }

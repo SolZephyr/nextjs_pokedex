@@ -20,7 +20,7 @@ export default async function Page({ searchParams, }: { searchParams: Promise<{ 
         types: types
     }
     return (
-        <main className="grow">
+        <>
             <section className="flex flex-col items-center gap-4 bg-gradient-to-br [background-image:linear-gradient(-10deg,_#C97FE4,_#AECDF6)] p-14">
                 <Suspense fallback={<TypeListLoader />}>
                     <TypeFilter />
@@ -32,6 +32,6 @@ export default async function Page({ searchParams, }: { searchParams: Promise<{ 
                     <PokemonList filter={filter} />
                 </Suspense>
             </section>
-        </main>
+        </>
     );
 }

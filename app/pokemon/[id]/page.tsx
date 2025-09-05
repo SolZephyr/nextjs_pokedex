@@ -26,12 +26,10 @@ export default async function Page(
     const { id } = await params;
     const { version } = await searchParams;
     return (
-        <main className="grow">
-            <section className="p-14 flex flex-row justify-center bg-gradient-to-br [background-image:linear-gradient(-10deg,_#C97FE4,_#AECDF6)]">
-                <Suspense fallback={<PokemonPageLoader />}>
-                    <PokemonPage id={Number(id)} version={version} />
-                </Suspense>
-            </section>
-        </main>
+        <section className="p-14 flex flex-row justify-center bg-gradient-to-br [background-image:linear-gradient(-10deg,_#C97FE4,_#AECDF6)]">
+            <Suspense fallback={<PokemonPageLoader />}>
+                <PokemonPage id={Number(id)} version={version} />
+            </Suspense>
+        </section>
     );
 }
