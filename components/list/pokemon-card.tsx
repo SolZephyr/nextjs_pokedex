@@ -3,7 +3,7 @@ import Image from "next/image";
 import { capitalize } from "@/lib/util";
 import Link from "next/link";
 import logo from "@/public/Logo.png";
-import { TypeTags } from "./type-list";
+import { TypeTags } from "../filter/type-list";
 
 export default function PokemonCard({ pkmn }: { pkmn: Pokemon }) {
     const id = pkmn.id || 0;

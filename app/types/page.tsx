@@ -1,6 +1,6 @@
-import PokemonList, { PokemonListLoader } from "@/components/pokemon-list";
-import TypeFilter from "@/components/type-filter";
-import { TypeListLoader } from "@/components/type-list";
+import TypeFilter from "@/components/filter/type-filter";
+import { TypeListLoader } from "@/components/filter/type-list";
+import PokemonList, { PokemonListLoader } from "@/components/list/pokemon-list";
 import { ListFilter } from "@/lib/interface";
 import { Suspense } from "react";
 

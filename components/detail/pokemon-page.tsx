@@ -4,9 +4,9 @@ import { POKEAPI } from "@/lib/pokeapi";
 import { capitalize } from "@/lib/util";
 import Image from "next/image";
 import { Suspense } from "react";
-import VersionFilter from "./version-filter";
-import { TypeTags } from "./type-list";
-import ButtonAudio from "./button-audio";
+import VersionFilter from "@/components/detail/version-filter";
+import { TypeTags } from "../filter/type-list";
+import ButtonAudio from "../common/button-audio";
 
 export default async function PokemonPage({ id, version }: { id: number, version?: string }) {
     const result = await POKEAPI().pokemon().get(Number(id));

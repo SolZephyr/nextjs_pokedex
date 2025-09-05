@@ -5,7 +5,7 @@ import { POKEAPI, PokeApiResult } from "@/lib/pokeapi";
 import Image from "next/image";
 import { Suspense, useState } from "react";
 import React from "react";
-import PokemonCard from "./pokemon-card";
+import PokemonCard from "./list/pokemon-card";
 import { Loader } from "lucide-react";
 
 export default function PokemonRandom() {

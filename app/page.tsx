@@ -1,6 +1,6 @@
 import PokemonRandom from "@/components/pokemon-random";
-import FeaturedList from "@/components/featured-list";
-import SearchBar from "@/components/searchbar";
+import FeaturedList from "@/components/list/featured-list";
+import SearchBar from "@/components/filter/searchbar";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import PokemonPage, { PokemonPageLoader } from "@/components/pokemon-page";
+import PokemonPage, { PokemonPageLoader } from "@/components/detail/pokemon-page";
 import { POKEAPI } from "@/lib/pokeapi";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";

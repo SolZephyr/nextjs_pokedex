@@ -1,5 +1,5 @@
-import PokemonList, { PokemonListLoader } from "@/components/pokemon-list";
-import SearchBar from "@/components/searchbar";
+import PokemonList, { PokemonListLoader } from "@/components/list/pokemon-list";
+import SearchBar from "@/components/filter/searchbar";
 import { ListFilter } from "@/lib/interface";
 import { Suspense } from "react";
 

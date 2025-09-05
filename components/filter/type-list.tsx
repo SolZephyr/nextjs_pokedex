@@ -1,9 +1,9 @@
 "use client";
 
 import { PokemonType } from "@/lib/interface";
-import PokemonTypeTag, { PokemonTypeTagButton, PokemonTypeTagButtonLoader } from "./pokemon-type";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import NotFound from "@/app/not-found";
+import PokemonTypeTag, { PokemonTypeTagButton, PokemonTypeTagButtonLoader } from "../common/pokemon-type";
 
 export default function TypeList({ types }: { types: PokemonType[] }) {
 

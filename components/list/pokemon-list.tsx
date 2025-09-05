@@ -1,6 +1,6 @@
 import { ListFilter, Pokemon } from "@/lib/interface";
 import { POKEAPI } from "@/lib/pokeapi";
-import Pagination from "./pagination";
+import Pagination from "../filter/pagination";
 import PokemonCard, { PokemonCardLoader } from "./pokemon-card";
 import NotFound from "@/app/not-found";
 

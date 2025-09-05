@@ -1,7 +1,7 @@
 import { PkmnVersion } from "@/lib/interface";
 import { POKEAPI } from "@/lib/pokeapi";
-import VersionList from "./version-list";
 import { capitalizeWords, cleanString } from "@/lib/util";
+import VersionList from "./version-list";
 
 export default async function VersionFilter({ specyId, pkmnId, version }: { specyId: number, pkmnId: number, version?: string }) {
     let versions: PkmnVersion[] = [];
