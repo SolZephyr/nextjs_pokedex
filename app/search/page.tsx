@@ -21,7 +21,7 @@ export default async function Page({ searchParams, }: { searchParams: Promise<{ 
             <section className="p-14 flex flex-row justify-center">
                 <SearchBar placeholder={"Search for a Pokémon..."} />
             </section>
-            <section className="bg-purple-50 px-14 pb-10">
+            <section className="bg-purple-50 px-14 pb-10 grow">
                 <h2 className="text-4xl text-center py-8">Pokémon</h2>
                 <Suspense fallback={<PokemonListLoader key={Math.random()} />}>
                     <PokemonList filter={params} />

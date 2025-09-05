@@ -26,7 +26,7 @@ export default async function Page({ searchParams, }: { searchParams: Promise<{ 
                     <TypeFilter />
                 </Suspense>
             </section>
-            <section className="bg-purple-50 px-14 pb-10">
+            <section className="bg-purple-50 px-14 pb-10 grow">
                 <h2 className="text-4xl text-center py-8">Pokémon</h2>
                 <Suspense fallback={<PokemonListLoader />}>
                     <PokemonList filter={filter} />

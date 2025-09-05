@@ -11,7 +11,7 @@ export default function NotFound() {
     }
 
     return (
-        <section className="flex flex-col justify-center items-center min-h-auto">
+        <section className="flex flex-col justify-center items-center grow">
             <h4>This page was not found</h4>
             <button onClick={navBack} className="btn-primary">Go back</button>
         </section>

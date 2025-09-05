@@ -12,7 +12,7 @@ export default async function FeaturedList() {
     const featuredList: Pokemon[] = (result.pokemons || []);
 
     return (
-        <section className="bg-purple-50 px-14 py-14">
+        <section className="bg-purple-50 p-14">
             <h2 className="text-4xl text-center py-8">Featured Pokémon</h2>
             <Suspense fallback={<p>Loading...</p>}>
                 <ul className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-center gap-4">
